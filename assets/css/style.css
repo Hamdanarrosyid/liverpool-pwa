@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+*{
+    font-family: 'Merriweather', serif;
+}
+
+.header-home .logo-image{
+    margin: 0 auto;
+    text-align: center;
+}
+.header-home .logo-image img{
+    width: 180px;
+}
+.header-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.header-home h1{
+    margin-bottom: 0;
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-weight: 500;
+}
+@media only screen and (max-width: 600px) {
+    .header-home h1 {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+}
+.header-home p{
+    /*margin-bottom: 0;*/
+    font-size: 15px;
+    width: 160px;
+    align-items: center;
+    font-weight: 300;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+.wrap{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+.row .card{
+    border: 1px solid grey;
+    padding: 20px;
+    max-height: 132px;
+}
+.row{
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.row .card:hover{
+    /*border: 1px solid #b71c1c;*/
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 100;
+}
+.row .card .card-content{
+    display: flex;
+    /*justify-content: space-between;*/
+    /*flex-direction: column;*/
+}
+.row .card .teams{
+    flex-grow: 1;
+    padding-right: 10px;
+}
+.row .card .teams .team{
+    display: flex;
+    justify-content: space-between;
+    /*background-color: #0D47A1;*/
+}
+
+.row .card .card-content .schedule{
+    border-left: .5px solid rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    padding-left: 5px;
+    max-width: 50px;
+    flex-direction: column;
+    display: flex;
+}
+.row .card .card-content .schedule p{
+    font-weight: 400;
+    font-size: 13px;
+}
+.status{
+    font-size: 10px;
+    font-weight: 300;
+}
+.status.size-normal{
+    font-size: 14px;
+}
+.logo-team{
+    max-width: 48px;
+    max-height: 48px;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+}
+.score{
+    display: flex;
+    justify-content: space-between;
+}
+.match-result p{
+    font-size: 30px;
+}
+.loading-container{
+    display: flex;
+    justify-content: center;
+    padding: 200px 0;
+    width: 100%;
+}
